@@ -80,7 +80,7 @@ function main() {
 # --- Custom script to EDIT HERE
 function goto_myscript() {
 
-	BLOCK_TRANSACTION="Il y a 51 personnes ici ce soir."
+	BLOCK_TRANSACTION="C'est le zoo a Saint-Tite-des-Caps."
 
 	echo "$BLOCK_TRANSACTION"
 	echo
@@ -89,8 +89,17 @@ function goto_myscript() {
 	HASH_BLOCK=$(printf "$BLOCK_TRANSACTION" | sha256sum)
 	echo "$HASH_BLOCK"
 
-	#78aac3b8f2f839c99975c980fc6f7e7bd01074eaa05b767d428f4187382899c3  -
+  ########################################################
+  echo;echo;
 
+	BLOCK_TRANSACTION="C'est le zoo à Saint-Tite-des-Caps."
+
+	echo "$BLOCK_TRANSACTION"
+	echo
+
+	# hash for this transaction is:
+	HASH_BLOCK=$(printf "$BLOCK_TRANSACTION" | sha256sum)
+	echo "$HASH_BLOCK"
 }
 
 # --- Entrypoint
